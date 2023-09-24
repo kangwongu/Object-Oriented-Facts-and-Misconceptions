@@ -1,22 +1,26 @@
 public class King {
 
+    WhiteRabbit whiteRabbit;
 
-//    public void makeTrial() {
-//        callWitness(new WhiteRabbit(new HatSeller()));
-//        testifyToWitness(new HatSeller());
-//    }
-
-    public HatSeller callWitness(WhiteRabbit whiteRabbit) {
-        System.out.println("왕 -> " + whiteRabbit +": 목격자를 불러오라");
-        // 2. 토끼는 왕의 요청에 응답해서 증인을 불러온다
-        return whiteRabbit.bringWitness();
+    public King(WhiteRabbit whiteRabbit) {
+        this.whiteRabbit = whiteRabbit;
     }
 
-    public void testifyToWitness(HatSeller hatSeller) {
-        System.out.println("왕 -> " + hatSeller + ": 증언하라");
-        // 4. 모자장수(증인)은 왕의 요청에 응답해서 증언한다
+    @Override
+    public String toString() {
+        return "King";
+    }
+
+    public void makeTrial() {
+        System.out.println("1. ... -> " + this + ": 재판하라");
+
+        // 2. 토끼에게 목격자를 불러오라고 요청한다
+        System.out.println("2. " + this + " -> " + whiteRabbit +": 목격자를 불러오라");
+        HatSeller hatSeller = whiteRabbit.bringWitness();
+
+        // 4. 불러온 증인에게 증언할 것은 요청한다
+        System.out.println("4. " + this + " -> " + hatSeller + ": 증언하라");
         hatSeller.testify();
     }
-
 
 }
