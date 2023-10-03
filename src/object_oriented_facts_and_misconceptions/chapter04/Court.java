@@ -1,10 +1,10 @@
-package chapter04;
+package object_oriented_facts_and_misconceptions.chapter04;
 
-import chapter04.judge.Judge;
-import chapter04.judge.King;
-import chapter04.rabbit.WhiteRabbit;
-import chapter04.witness.HatSeller;
-import chapter04.witness.Witness;
+import object_oriented_facts_and_misconceptions.chapter04.judge.Judge;
+import object_oriented_facts_and_misconceptions.chapter04.judge.King;
+import object_oriented_facts_and_misconceptions.chapter04.rabbit.WhiteRabbit;
+import object_oriented_facts_and_misconceptions.chapter04.witness.HatSeller;
+import object_oriented_facts_and_misconceptions.chapter04.witness.Witness;
 
 public class Court {
     public static void main(String[] args) {

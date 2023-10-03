@@ -1,6 +1,6 @@
-package chapter04.rabbit;
+package object_oriented_facts_and_misconceptions.chapter04.rabbit;
 
-import chapter04.witness.Witness;
+import object_oriented_facts_and_misconceptions.chapter04.witness.Witness;
 
 public class WhiteRabbit {
 

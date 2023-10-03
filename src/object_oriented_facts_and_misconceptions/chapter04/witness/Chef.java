@@ -1,4 +1,4 @@
-package chapter04.witness;
+package object_oriented_facts_and_misconceptions.chapter04.witness;
 
 public class Chef implements Witness {
 

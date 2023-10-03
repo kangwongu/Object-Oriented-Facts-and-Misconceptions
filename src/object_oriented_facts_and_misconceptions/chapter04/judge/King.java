@@ -1,19 +1,19 @@
-package chapter04.judge;
+package object_oriented_facts_and_misconceptions.chapter04.judge;
 
-import chapter04.rabbit.WhiteRabbit;
-import chapter04.witness.Witness;
+import object_oriented_facts_and_misconceptions.chapter04.rabbit.WhiteRabbit;
+import object_oriented_facts_and_misconceptions.chapter04.witness.Witness;
 
-public class Queen implements Judge {
+public class King implements Judge {
 
     public WhiteRabbit whiteRabbit;
 
-    public Queen(WhiteRabbit whiteRabbit) {
+    public King(WhiteRabbit whiteRabbit) {
         this.whiteRabbit = whiteRabbit;
     }
 
     @Override
     public String toString() {
-        return "Queen";
+        return "King";
     }
 
     @Override
@@ -28,4 +28,5 @@ public class Queen implements Judge {
         System.out.println("4. " + this + " -> " + witness + ": 증언하라");
         witness.testify();
     }
+
 }
