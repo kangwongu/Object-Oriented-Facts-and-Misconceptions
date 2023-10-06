@@ -2,8 +2,9 @@ package object_oriented.abstraction;
 
 public class Main {
     public static void main(String[] args) {
-        SampleService service = new SampleService(new EmailNotifier(), new SmsNotifier());
+//        Notifier notifier = NotifierFactory.instance().getNotifier("sms");
+        SampleService service = new SampleService();
 
-        service.sendNotify("sms");
+        service.sendNotify("kakao");
     }
 }
